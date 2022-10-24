@@ -43,11 +43,11 @@ import bs4
 import json
 
 
-mongourl = 'MONGO_URI'
+mongourl = 'mongodb+srv://root:YDogbb5b64pvmfQ0@cluster0.bounaz6.mongodb.net/?retryWrites=true&w=majority'
 client = pymongo.MongoClient(mongourl,serverSelectionTimeoutMS=5000)
 maindb = client.bot['main']
 
-antidb = redis.Redis(host='REDIS_URI', port=REDIS_PASS, password='REDIS_PASS')
+antidb = redis.Redis(host='redis-14816.c245.us-east-1-3.ec2.cloud.redislabs.com', port=14816, password='OyDIrCP67IK8DbvAA902fukTnTz2C0FY')
 
 BOT_USERNAME = 'BOT_USERNAME'
 loggp = -735069168
